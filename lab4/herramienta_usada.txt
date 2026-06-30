@@ -1,0 +1,6 @@
+Herramienta: Wazuh Dashboard / OpenSearch Dashboards
+Instancia EC2: seguridad-soc-all-in-one
+Hostname: completar con hostname de la instancia, por ejemplo ip-172-31-xx-xx
+IP publica: completar con IP publica de AWS
+Puerto: 443 HTTPS
+Uso: Dashboard SOC para monitoreo de alertas Wazuh

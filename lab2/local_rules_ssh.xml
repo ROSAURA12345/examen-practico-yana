@@ -1,0 +1,15 @@
+<group name="local,ssh,">
+
+  <!--
+    Regla personalizada de fuerza bruta SSH.
+    En la instalación probada, Wazuh clasifica los intentos fallidos
+    "Failed password for invalid user" con la regla interna 5710.
+    Esta regla local genera una alerta propia de severidad 10.
+  -->
+  <rule id="100001" level="10">
+    <if_sid>5710</if_sid>
+    <description>Ataque de fuerza bruta SSH detectado desde $(srcip)</description>
+    <group>authentication_failures,brute_force,</group>
+  </rule>
+
+</group>

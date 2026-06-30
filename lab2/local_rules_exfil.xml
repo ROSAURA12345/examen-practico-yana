@@ -1,0 +1,26 @@
+<group name="local,exfiltration,">
+
+  <!--
+    Regla base para identificar posible transferencia saliente elevada.
+    La lógica representa una conexión desde un host interno con envío superior a 500 MB.
+    En un entorno real, esta regla depende de que el firewall o IDS entregue el campo bytes_sent.
+  -->
+  <rule id="100010" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="bytes_sent">^[5-9][0-9]{8,}|[1-9][0-9]{9,}$</field>
+    <description>Transferencia saliente superior a 500 MB detectada desde host interno</description>
+    <group>network,exfiltration,</group>
+  </rule>
+
+  <!--
+    Regla de correlación para posible exfiltración:
+    se dispara cuando se detectan al menos 2 eventos de transferencia saliente elevada
+    dentro de un periodo de 8 horas. Se usa frequency=2 porque Wazuh no acepta frequency=1.
+  -->
+  <rule id="100011" level="14" frequency="2" timeframe="28800">
+    <if_matched_sid>100010</if_matched_sid>
+    <description>Posible exfiltración de datos asociada a transferencia saliente elevada</description>
+    <group>network,exfiltration,critical,</group>
+  </rule>
+
+</group>

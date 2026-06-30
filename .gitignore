@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# No subir credenciales ni llaves AWS
+.env
+*.pem
+*.key
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
+
+# IMPORTANTE: No ignorar entregables del examen
+# Se deben subir logs, reportes JSON, gráficas PNG, modelo PKL y evidencias.
