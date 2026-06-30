@@ -1,6 +1,6 @@
 # Examen Práctico Final — Seguridad Informática
 
-**Estudiante:** [Nombre de la estudiante] Yana  
+**Estudiante:** Gldys Rosaura Yana Pari 
 **Repositorio sugerido:** `examen-practico-yana`  
 **Curso:** Seguridad Informática  
 **Unidad IV:** Monitoreo de Seguridad, SIEM e Inteligencia Artificial  
