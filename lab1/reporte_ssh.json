@@ -1,0 +1,46 @@
+{
+  "fecha_analisis": "2026-06-30 22:31:00",
+  "total_intentos_fallidos": 318,
+  "ips_sospechosas": [
+    {
+      "ip": "45.33.32.156",
+      "intentos": 112,
+      "alerta": true
+    },
+    {
+      "ip": "91.240.118.172",
+      "intentos": 33,
+      "alerta": false
+    },
+    {
+      "ip": "193.32.162.55",
+      "intentos": 32,
+      "alerta": false
+    },
+    {
+      "ip": "203.0.113.60",
+      "intentos": 31,
+      "alerta": false
+    },
+    {
+      "ip": "172.16.0.70",
+      "intentos": 30,
+      "alerta": false
+    },
+    {
+      "ip": "192.168.1.90",
+      "intentos": 28,
+      "alerta": false
+    },
+    {
+      "ip": "10.0.128.239",
+      "intentos": 26,
+      "alerta": false
+    },
+    {
+      "ip": "198.51.100.23",
+      "intentos": 26,
+      "alerta": false
+    }
+  ]
+}
