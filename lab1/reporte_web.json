@@ -1,0 +1,290 @@
+{
+  "fecha_analisis": "2026-06-30 22:31:30",
+  "total_peticiones_parseadas": 1000,
+  "lineas_no_parseadas": 0,
+  "escaneos_directorios": [
+    {
+      "ip": "198.51.100.50",
+      "inicio": "2026-06-14 08:00:00 -0500",
+      "fin": "2026-06-14 08:00:40 -0500",
+      "rutas_distintas": 21,
+      "total_peticiones": 21,
+      "muestra_rutas": [
+        "/scan0/",
+        "/scan1/",
+        "/scan10/",
+        "/scan11/",
+        "/scan12/",
+        "/scan13/",
+        "/scan14/",
+        "/scan15/",
+        "/scan16/",
+        "/scan17/"
+      ]
+    }
+  ],
+  "errores_por_ip": {
+    "181.65.123.10": {
+      "500": 13,
+      "404": 31
+    },
+    "10.0.1.11": {
+      "404": 35,
+      "500": 26
+    },
+    "45.33.32.156": {
+      "500": 22,
+      "404": 33
+    },
+    "192.168.1.77": {
+      "404": 21,
+      "500": 14
+    },
+    "203.0.113.77": {
+      "404": 31,
+      "500": 43
+    },
+    "172.16.0.25": {
+      "404": 28,
+      "500": 13
+    },
+    "10.0.1.10": {
+      "404": 24,
+      "500": 9
+    },
+    "198.51.100.50": {
+      "404": 54,
+      "500": 17
+    }
+  },
+  "posibles_sqli": [
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:23 -0500",
+      "url": "/news?id=10%27",
+      "patrones": [
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:04 -0500",
+      "url": "/api/items?filter=SELECT",
+      "patrones": [
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:10 -0500",
+      "url": "/login?user=admin'--",
+      "patrones": [
+        "--",
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:25 -0500",
+      "url": "/login?user=admin'--",
+      "patrones": [
+        "--",
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:24 -0500",
+      "url": "/api/items?filter=SELECT",
+      "patrones": [
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:26 -0500",
+      "url": "/search?q=UNION+SELECT+password+FROM+users",
+      "patrones": [
+        "\\bUNION\\b",
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:16 -0500",
+      "url": "/search?q=UNION+SELECT+password+FROM+users",
+      "patrones": [
+        "\\bUNION\\b",
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:15 -0500",
+      "url": "/login?user=admin'--",
+      "patrones": [
+        "--",
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:29 -0500",
+      "url": "/api/items?filter=SELECT",
+      "patrones": [
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:06 -0500",
+      "url": "/search?q=UNION+SELECT+password+FROM+users",
+      "patrones": [
+        "\\bUNION\\b",
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:00 -0500",
+      "url": "/login?user=admin'--",
+      "patrones": [
+        "--",
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:14 -0500",
+      "url": "/api/items?filter=SELECT",
+      "patrones": [
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:20 -0500",
+      "url": "/login?user=admin'--",
+      "patrones": [
+        "--",
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:19 -0500",
+      "url": "/api/items?filter=SELECT",
+      "patrones": [
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:28 -0500",
+      "url": "/news?id=10%27",
+      "patrones": [
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:01 -0500",
+      "url": "/search?q=UNION+SELECT+password+FROM+users",
+      "patrones": [
+        "\\bUNION\\b",
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:11 -0500",
+      "url": "/search?q=UNION+SELECT+password+FROM+users",
+      "patrones": [
+        "\\bUNION\\b",
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:08 -0500",
+      "url": "/news?id=10%27",
+      "patrones": [
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:13 -0500",
+      "url": "/news?id=10%27",
+      "patrones": [
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:05 -0500",
+      "url": "/login?user=admin'--",
+      "patrones": [
+        "--",
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:21 -0500",
+      "url": "/search?q=UNION+SELECT+password+FROM+users",
+      "patrones": [
+        "\\bUNION\\b",
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:18 -0500",
+      "url": "/news?id=10%27",
+      "patrones": [
+        "'"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:09 -0500",
+      "url": "/api/items?filter=SELECT",
+      "patrones": [
+        "\\bSELECT\\b"
+      ],
+      "status": 500
+    },
+    {
+      "ip": "203.0.113.77",
+      "timestamp": "2026-06-14 08:05:03 -0500",
+      "url": "/news?id=10%27",
+      "patrones": [
+        "'"
+      ],
+      "status": 500
+    }
+  ]
+}
